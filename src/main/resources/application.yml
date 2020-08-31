@@ -5,7 +5,10 @@
 #      password: 1111
 logging:
   level:
-    root: warn
+    root: debug
     com.example.demo: debug
 
-
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
