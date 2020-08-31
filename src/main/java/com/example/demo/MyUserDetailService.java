@@ -1,0 +1,18 @@
+package com.example.demo;
+
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.stereotype.Service;
+
+/**
+ * author:james
+ * day:2020-08-31
+ */
+@Service
+public class MyUserDetailService implements UserDetailsService {
+    @Override
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+        return new MyUserDetails(username);
+    }
+}

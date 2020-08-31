@@ -1,0 +1,11 @@
+#spring:
+#  security:
+#    user:
+#      name: test
+#      password: 1111
+logging:
+  level:
+    root: warn
+    com.example.demo: debug
+
+
